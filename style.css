@@ -13,7 +13,10 @@ body {
   width: 400px;
   display: flex;
   flex-wrap: wrap;
+  background-color: gray;
   margin: auto;
+  border: 22px solid
+    linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 .grid div {
@@ -22,9 +25,7 @@ body {
   border-radius: 5%;
   background: linear-gradient(225deg, #f8f8f8, #d1d1d1);
   box-shadow: -3px 3px 7px #b7b7b7, 3px -3px 7px #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
 }
 
 .bomb {
@@ -34,10 +35,12 @@ body {
 }
 
 div .checked {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   border-radius: 5%;
   background: #e8e8e8;
   box-shadow: inset -3px 3px 7px #b7b7b7, inset 3px -3px 7px #ffffff;
+}
+
+div .checked .bomb {
+  z-index: 45;
 }

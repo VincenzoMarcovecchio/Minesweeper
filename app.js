@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         square.innerHTML = '💣';
       }
     });
-    gameOva.innerHTML = 'Game Ova for Ya';
+    gameOva.innerHTML = 'Game Ova';
   }
 
   //check for win
